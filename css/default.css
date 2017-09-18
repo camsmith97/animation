@@ -1,0 +1,63 @@
+
+@font-face{
+	font-family: governor;
+	src:url(../fonts/governor.ttf);
+}
+.word {
+	position: absolute;
+	top: 30%;
+	left: 40%;
+}
+.letter {
+	font-family: governor;
+	font-size: 72pt;
+	float: left;
+}
+
+@-webkit-keyframes n_move {
+	0% {top: 0px; left: 0px;}
+	25% {top: -150px; left: 0px;}
+	50% {top: -150px; left: 150px;}
+	100% {top: 0px; left: 150px;}
+}
+
+#n {
+	position: relative;
+	-webkit-animation: n_move 2s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes t_move {
+	0% {top: 0px; left: 0px;}
+	25% {top: 150px; left: 0px;}
+	50% {top: 150px; left: -150px;}
+	100% {top: 0px; left: -150px;}
+}
+
+#t {
+	position: relative;
+	-webkit-animation: t_move 2s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes e_move {
+	0% {top: 0px; left: 0px;}
+	100% {top: 0px; left: 10px;}
+}
+
+#e {
+	position: relative;
+	-webkit-animation: e_move 2s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes o_move {
+	0% {top: 0px; left: 0px;}
+	100% {top: 0px; left: -10px;}
+}
+
+#o {
+	position: relative;
+	-webkit-animation: o_move 2s;
+	animation-delay: 1s;
+}
